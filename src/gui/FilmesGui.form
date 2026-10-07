@@ -23,13 +23,333 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="AppPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="AppPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="32" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="AppPnl">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="gombokPnl" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="filmekPnl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="filmReszletPnl" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="261" max="-2" attributes="0"/>
+                          <Component id="appCimLbl" min="-2" pref="120" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="appCimLbl" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="filmekPnl" max="32767" attributes="0"/>
+                      <Component id="filmReszletPnl" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="gombokPnl" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="appCimLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="FILMEK"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="filmekPnl">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Filmek"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="filmekLst">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                      <StringArray count="17">
+                        <StringItem index="0" value="Mercy"/>
+                        <StringItem index="1" value="Project Hail Mary"/>
+                        <StringItem index="2" value="Exit 8"/>
+                        <StringItem index="3" value="Mortal Combat II"/>
+                        <StringItem index="4" value="Itt &#xe9;rzem magam otthon"/>
+                        <StringItem index="5" value="Scream 7"/>
+                        <StringItem index="6" value="The Backrooms"/>
+                        <StringItem index="7" value="Obsession"/>
+                        <StringItem index="8" value="Toy Story 5"/>
+                        <StringItem index="9" value="Odyssey"/>
+                        <StringItem index="10" value="Vincent Van Gogh: A New Way of Seeing"/>
+                        <StringItem index="11" value="Spiderman: Brand New Day"/>
+                        <StringItem index="12" value="Az &#xd6;r&#xf6;ks&#xe9;g"/>
+                        <StringItem index="13" value="Ext&#xe1;zis Uncut"/>
+                        <StringItem index="14" value=" "/>
+                        <StringItem index="15" value=" "/>
+                        <StringItem index="16" value=" "/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="filmReszletPnl">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Film r&#xe9;szletei"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="korhatarChb" min="-2" pref="87" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="filmCimLbl" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="rendezoLbl" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="kiadasiEvLbl" alignment="0" pref="66" max="32767" attributes="0"/>
+                                  <Component id="ertekelesLbl" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="filmCimTxtF" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
+                                  <Component id="rendezoTxtF" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
+                                  <Component id="kiadasiEvTxtF" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                  <Component id="ertekelesTxtF" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="filmCimLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="filmCimTxtF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="rendezoTxtF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="rendezoLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="kiadasiEvTxtF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="kiadasiEvLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ertekelesLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ertekelesTxtF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Component id="korhatarChb" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="42" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="filmCimLbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="C&#xed;m:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="kiadasiEvLbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kiad&#xe1;si &#xe9;v:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ertekelesLbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xc9;rt&#xe9;kel&#xe9;s:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="filmCimTxtF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Odyssey"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="rendezoTxtF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Christopher Nolan"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="kiadasiEvTxtF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2026"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="ertekelesTxtF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="8.4"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="rendezoLbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rendez&#x151;:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="korhatarChb">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Korhat&#xe1;ros"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="gombokPnl">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="ujFilmHozzaadBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="modositasBtn" min="-2" pref="133" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="torlesBtn" min="-2" pref="133" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ujFilmHozzaadBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="modositasBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="torlesBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="ujFilmHozzaadBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xda;j film hozz&#xe1;ad&#xe1;sa"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="modositasBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="M&#xf3;dos&#xed;t&#xe1;s"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="torlesBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="T&#xf6;rl&#xe9;s"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
 </Form>

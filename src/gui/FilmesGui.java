@@ -26,17 +26,211 @@ public class FilmesGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        AppPnl = new javax.swing.JPanel();
+        appCimLbl = new javax.swing.JLabel();
+        filmekPnl = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        filmekLst = new javax.swing.JList<>();
+        filmReszletPnl = new javax.swing.JPanel();
+        filmCimLbl = new javax.swing.JLabel();
+        kiadasiEvLbl = new javax.swing.JLabel();
+        ertekelesLbl = new javax.swing.JLabel();
+        filmCimTxtF = new javax.swing.JTextField();
+        rendezoTxtF = new javax.swing.JTextField();
+        kiadasiEvTxtF = new javax.swing.JTextField();
+        ertekelesTxtF = new javax.swing.JTextField();
+        rendezoLbl = new javax.swing.JLabel();
+        korhatarChb = new javax.swing.JCheckBox();
+        gombokPnl = new javax.swing.JPanel();
+        ujFilmHozzaadBtn = new javax.swing.JButton();
+        modositasBtn = new javax.swing.JButton();
+        torlesBtn = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        AppPnl.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        appCimLbl.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        appCimLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        appCimLbl.setText("FILMEK");
+        appCimLbl.setBorder(new javax.swing.border.MatteBorder(null));
+
+        filmekPnl.setBorder(javax.swing.BorderFactory.createTitledBorder("Filmek"));
+
+        filmekLst.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Mercy", "Project Hail Mary", "Exit 8", "Mortal Combat II", "Itt érzem magam otthon", "Scream 7", "The Backrooms", "Obsession", "Toy Story 5", "Odyssey", "Vincent Van Gogh: A New Way of Seeing", "Spiderman: Brand New Day", "Az Örökség", "Extázis Uncut", " ", " ", " " };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(filmekLst);
+
+        javax.swing.GroupLayout filmekPnlLayout = new javax.swing.GroupLayout(filmekPnl);
+        filmekPnl.setLayout(filmekPnlLayout);
+        filmekPnlLayout.setHorizontalGroup(
+            filmekPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filmekPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        filmekPnlLayout.setVerticalGroup(
+            filmekPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filmekPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+        );
+
+        filmReszletPnl.setBorder(javax.swing.BorderFactory.createTitledBorder("Film részletei"));
+
+        filmCimLbl.setText("Cím:");
+
+        kiadasiEvLbl.setText("Kiadási év:");
+
+        ertekelesLbl.setText("Értékelés:");
+
+        filmCimTxtF.setText("Odyssey");
+
+        rendezoTxtF.setText("Christopher Nolan");
+
+        kiadasiEvTxtF.setText("2026");
+
+        ertekelesTxtF.setText("8.4");
+
+        rendezoLbl.setText("Rendező:");
+
+        korhatarChb.setSelected(true);
+        korhatarChb.setText("Korhatáros");
+
+        javax.swing.GroupLayout filmReszletPnlLayout = new javax.swing.GroupLayout(filmReszletPnl);
+        filmReszletPnl.setLayout(filmReszletPnlLayout);
+        filmReszletPnlLayout.setHorizontalGroup(
+            filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filmReszletPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(filmReszletPnlLayout.createSequentialGroup()
+                        .addComponent(korhatarChb, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(filmReszletPnlLayout.createSequentialGroup()
+                        .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(filmCimLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(rendezoLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(kiadasiEvLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                            .addComponent(ertekelesLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(filmCimTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rendezoTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kiadasiEvTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ertekelesTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(23, Short.MAX_VALUE))))
+        );
+        filmReszletPnlLayout.setVerticalGroup(
+            filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filmReszletPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(filmCimLbl)
+                    .addComponent(filmCimTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rendezoTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rendezoLbl))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(kiadasiEvTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kiadasiEvLbl))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filmReszletPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ertekelesLbl)
+                    .addComponent(ertekelesTxtF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+                .addComponent(korhatarChb)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
+        gombokPnl.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        ujFilmHozzaadBtn.setText("Új film hozzáadása");
+
+        modositasBtn.setText("Módosítás");
+
+        torlesBtn.setText("Törlés");
+
+        javax.swing.GroupLayout gombokPnlLayout = new javax.swing.GroupLayout(gombokPnl);
+        gombokPnl.setLayout(gombokPnlLayout);
+        gombokPnlLayout.setHorizontalGroup(
+            gombokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gombokPnlLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(ujFilmHozzaadBtn)
+                .addGap(18, 18, 18)
+                .addComponent(modositasBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(torlesBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        gombokPnlLayout.setVerticalGroup(
+            gombokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gombokPnlLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(gombokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ujFilmHozzaadBtn)
+                    .addComponent(modositasBtn)
+                    .addComponent(torlesBtn))
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout AppPnlLayout = new javax.swing.GroupLayout(AppPnl);
+        AppPnl.setLayout(AppPnlLayout);
+        AppPnlLayout.setHorizontalGroup(
+            AppPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AppPnlLayout.createSequentialGroup()
+                .addGroup(AppPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(AppPnlLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(gombokPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AppPnlLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(filmekPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(filmReszletPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AppPnlLayout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(appCimLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        AppPnlLayout.setVerticalGroup(
+            AppPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AppPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(appCimLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AppPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(filmekPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(filmReszletPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(gombokPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AppPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AppPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,5 +272,24 @@ public class FilmesGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel AppPnl;
+    private javax.swing.JLabel appCimLbl;
+    private javax.swing.JLabel ertekelesLbl;
+    private javax.swing.JTextField ertekelesTxtF;
+    private javax.swing.JLabel filmCimLbl;
+    private javax.swing.JTextField filmCimTxtF;
+    private javax.swing.JPanel filmReszletPnl;
+    private javax.swing.JList<String> filmekLst;
+    private javax.swing.JPanel filmekPnl;
+    private javax.swing.JPanel gombokPnl;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel kiadasiEvLbl;
+    private javax.swing.JTextField kiadasiEvTxtF;
+    private javax.swing.JCheckBox korhatarChb;
+    private javax.swing.JButton modositasBtn;
+    private javax.swing.JLabel rendezoLbl;
+    private javax.swing.JTextField rendezoTxtF;
+    private javax.swing.JButton torlesBtn;
+    private javax.swing.JButton ujFilmHozzaadBtn;
     // End of variables declaration//GEN-END:variables
 }
